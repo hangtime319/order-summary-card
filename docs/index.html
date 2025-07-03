@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet" />
+
+    <link href="./output.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body class="text-base font-red-hat bg-[url('./images/pattern-background-desktop.svg')] bg-no-repeat bg-contain bg-top bg-pale-blue max-sm:bg-[url('./images/pattern-background-mobile.svg')]">
+    <main class="flex justify-center items-center h-screen">
+      <section class="w-[24rem] rounded-lg bg-white max-sm:w-[22rem]">
+        <img class="rounded-t-lg" src="./images/illustration-hero.svg" alt="Person dancing with a cellphone in your hand" />
+
+        <div class="flex flex-col items-center justify-center gap-3 p-6">
+          <h1 class="text-xl text-dark-blue font-black my-2">Order Summary</h1>
+          <p class="text-desaturated-blue text-center">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+          <div class="mt-2 flex items-center justify-between gap-36 bg-very-pale-blue p-5 rounded-lg max-sm:gap-28">
+            <div class="flex">
+              <img src="./images/icon-music.svg" alt="Icon Music" />
+              <div class="ml-3">
+                <p class="text-dark-blue font-bold">Annual Plan</p>
+                <span class="text-desaturated-blue font-medium">$59.99/year</span>
+              </div>
+            </div>
+            <div>
+              <a class="text-bright-blue font-bold text-sm underline hover:text-desaturated-blue" href="#">Change</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-5 mt-5 w-full">
+            <button class="text-sm text-white font-bold bg-bright-blue px-24 py-3 rounded-lg text-center shadow-xl shadow-bright-blue/35 hover:bg-bright-blue/50 transition-colors max-sm:px-20" type="button">Proceed to Payment</button>
+            <button class="text-sm text-desaturated-blue font-bold hover:text-dark-blue">Cancel Order</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+  </body>
+</html>
+<!-- npx tailwindcss -i ./docs/input.css -o ./docs/output.css --watch -->
